@@ -2,7 +2,7 @@
 
 A conversational checkout agent that replaces the browse → cart → pay flow with a single chat interface — built on Razorpay's test-mode APIs, with a full audit trail behind every action.
 
-> Built for [Buildathon name] — [date].
+> Built for Buildathon.
 
 ## Why
 
@@ -14,7 +14,7 @@ CartTalk answers that by treating every checkout as a strict, append-only state 
 Intent → Cart → Confirmation → Charge → Payment
 ```
 
-Nothing in this chain is ever overwritten. The agent only ever appends the next event, and the receipt/audit trail you see is read directly from those records — never from the model's own summary of what it did.
+Nothing in this chain is ever overwritten. The agent only appends the next event, and the receipt/audit trail you see is read directly from those records — never from the model's own summary of what it did.
 
 ## How it works
 
@@ -46,8 +46,8 @@ Nothing in this chain is ever overwritten. The agent only ever appends the next 
 **1. Clone and install dependencies**
 
 ```bash
-git clone https://github.com/an1208/rzpay_checkout_ag.git
-cd rzpay_checkout_ag
+git clone https://github.com/an1208/carttalk_rzpay_project.git
+cd carttalk_rzpay_project
 python -m venv venv
 source venv/bin/activate   # venv\Scripts\activate on Windows
 pip install -r requirements.txt
